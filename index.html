@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabrina Ramos - Abogada</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+            font-family: 'Playfair Display', serif;
+            background-color: black;
+            color: white;
+        }
+        .presentation {
+            margin-right: 20%;
+        }
+        .container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            position: relative;
+            text-align: center;
+            color: #C2A878; /* Color dorado */
+        }
+        .container h1 {
+            font-size: 48px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #C2A878; /* Dorado */
+        }
+        .container p {
+            font-size: 20px;
+            margin-top: 10px;
+            color: #C2A878; /* Dorado */
+        }
+        .presentation h1, .presentation p {
+            color: #C2A878; /* Gris Dorado */
+        }
+        .about {
+            width: 100%;
+            background-color: #2c2c2c;  /* Fondo oscuro para About */
+            padding: 60px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .about-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            width: 100%;
+            text-align: left;
+        }
+        .about-text {
+            width: 60%;
+            padding-right: 30px;
+        }
+        .about-text h2 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #C2A878;
+            margin-bottom: 30px;
+        }
+        .about-text p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #d3d3d3;
+        }
+        .about-image {
+            width: 35%;
+        }
+        .about-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        /* Responsividad para dispositivos móviles */
+        @media (max-width: 768px) {
+            .about-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .about-text {
+                width: 100%;
+                padding-right: 0;
+                margin-bottom: 30px;
+            }
+            .about-image {
+                width: 100%;
+            }
+            .service-box {
+                margin-bottom: 20px;
+            }
+        }
+        /* Estilo para Servicios */
+        #services {
+    background-color: #2c2c2c !important;
+}
+        .section {
+            padding: 20px;
+        }
+        .service-box {
+            transition: all 0.3s ease;
+        }
+        .same-font {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Estilo para Contact */
+        .contact {
+            background: url('secondPage.jpg') no-repeat center center;
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        /* Navbar estilos */
+        nav {
+            background-color: #212121; /* Fondo oscuro */
+            padding: 10px 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .navbar-brand {
+            color: #C2A878 !important; /* Dorado */
+        }
+        nav a {
+            color: #C2A878 !important; /* Dorado */
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 20px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #C2A878; /* Dorado de fondo en hover */
+            color: #212121 !important; /* Color oscuro en hover */
+            border-radius: 5px;
+        }
+        .navbar-toggler {
+            border: none;
+        }
+        @media (max-width: 768px) {
+            .navbar-nav {
+                text-align: center;
+            }
+            .nav-item {
+                margin: 10px 0;
+            }
+        }
+        /* Estilos para el formulario de contacto */
+        .form-container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            width: 80%;
+            max-width: 500px;
+        }
+        .form-container input, .form-container textarea {
+            background-color: #333;
+            color: white;
+            border: 1px solid #444;
+            border-radius: 5px;
+            padding: 15px;
+            width: 100%;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        .form-container button {
+            background-color: #C2A878;
+            color: white;
+            font-size: 18px;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .form-container button:hover {
+            background-color: #B39D61; /* Dorado más oscuro */
+        }
+
+        /* Estilo para el Pie de Página */
+        footer {
+            background-color: #212121;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        footer a {
+            color: #C2A878;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        footer a:hover {
+            color: #B39D61;
+        }
+        .container {
+    background-image: url('sabrinaRamos.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+@media (max-width: 768px) {
+    .container {
+        background-color: #2c2c2c !important; 
+        background-image: none !important;   
+        height: 100vh;                       
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Sabrina Ramos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre Mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <div id="home" class="container">
+        <div class="presentation">
+            <h1>SABRINA RAMOS</h1>
+            <p>ABOGADA</p>
+            <p class="same-font">ASOCIACIÓN CON LEON CHAIA</p>
+        </div>
+    </div>
+
+    <!-- Servicios Section -->
+    <div id="services" class="section bg-dark text-white">
+        <h2 class="text-center mb-4 same-font">Servicios</h2>
+        <div class="d-flex justify-content-between flex-wrap">
+            <div class="service-box flex-fill text-center p-4 mx-2 border border-dark bg-white text-dark d-flex flex-column justify-content-center">
+                <h3 class="same-font">PENAL</h3>
+                <ul class="list-unstyled">
+                    <li>Defensa en procesos penales.</li>
+                    <li>Asesoramiento en litigios penales.</li>
+                    <li>Representación ante tribunales.</li>
+                </ul>
+            </div>
+            <div class="service-box flex-fill text-center p-4 mx-2 border border-dark bg-white text-dark d-flex flex-column justify-content-center">
+                <h3 class="same-font">CIVIL</h3>
+                <ul class="list-unstyled">
+                    <li>Resolución de conflictos contractuales.</li>
+                    <li>Defensa de bienes y propiedades.</li>
+                    <li>Asesoramiento en derechos de propiedad.</li>
+                </ul>
+            </div>
+            <div class="service-box flex-fill text-center p-4 mx-2 border border-dark bg-white text-dark d-flex flex-column justify-content-center">
+                <h3 class="same-font">FAMILIA</h3>
+                <ul class="list-unstyled">
+                    <li>Asesoramiento en divorcios.</li>
+                    <li>Asesoría en adopciones.</li>
+                    <li>Consultoría en herencias.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="about">
+        <div class="section about-content">
+            <div class="about-text">
+                <h2 class="same-font">Sobre Sabrina Ramos</h2>
+                <p>Con más de 10 años de experiencia en el ámbito legal, Sabrina se especializa en derecho penal, civil y de familia. Su compromiso con la justicia y el bienestar de sus clientes la ha llevado a proporcionar un servicio altamente personalizado y profesional, con el objetivo de ofrecer soluciones efectivas en cada caso.</p>
+                <p>En su trayectoria, Sabrina ha trabajado en diversos casos complejos, siempre buscando el mejor resultado para sus clientes. Su visión es seguir brindando un servicio legal de calidad, enfocado en la satisfacción y éxito de quienes confían en ella.</p>
+            </div>
+            <div class="about-image">
+                <img src="contact-image.jpg" alt="Imagen de Sabrina Ramos">
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="contact">
+        <form action="mailto:sabrina.95.ramos@gmail.com" method="post" enctype="text/plain" class="form-container">
+            <h2>Contacto</h2>
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name" placeholder="Escribe tu nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="Escribe tu correo electrónico" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Escribe tu mensaje" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contacto:</p>
+        <p>Email: <a href="mailto:sabrina.95.ramos@gmail.com">sabrina.95.ramos@gmail.com</a></p>
+        <p>Teléfono: +123 456 7890</p>
+        <p>
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a> |
+            <a href="https://wa.me/11234567890" target="_blank">WhatsApp</a> |
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+        </p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
