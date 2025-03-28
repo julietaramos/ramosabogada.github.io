@@ -108,31 +108,50 @@
                 margin-bottom: 20px;
             }
         }
-        /* Estilo para Servicios */
         #services {
-    background-color: #2c2c2c !important;
+    background: url('facultadDeDerecho.jpg') no-repeat center center / cover;
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
 }
-        .section {
-            padding: 20px;
-        }
-        .service-box {
-            transition: all 0.3s ease;
-        }
-        .same-font {
-            font-family: 'Playfair Display', serif;
-        }
-        /* Estilo para Contact */
-        .contact {
-            background: url('secondPage.jpg') no-repeat center center;
-            background-size: cover;
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-        }
+
+/* Caja grande que envuelve el título y los servicios */
+.services-container {
+    background-color: rgba(0, 0, 0, 0.75); /* Fondo oscuro con transparencia */
+    padding: 30px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+/* Título dentro del cuadro */
+.services-container h2 {
+    margin-bottom: 20px;
+    color: #C2A878;
+    font-weight: bold;
+
+}
+
+/* Estilo individual de cada servicio */
+.service-box {
+    flex: 1;
+    min-width: 250px;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .d-flex {
+        flex-direction: column; /* Cambia a una sola columna */
+        align-items: center;
+    }
+
+    .services-container {
+        width: 90%; /* Ocupar más espacio en pantallas pequeñas */
+    }
+}
         /* Navbar estilos */
         nav {
             background-color: #212121; /* Fondo oscuro */
@@ -165,6 +184,21 @@
                 margin: 10px 0;
             }
         }
+
+        .contact {
+            background: url('secondPage.jpg') no-repeat center center;
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+
+
         /* Estilos para el formulario de contacto */
         .form-container {
             background-color: rgba(0, 0, 0, 0.7);
@@ -224,10 +258,16 @@
 
 @media (max-width: 768px) {
     .container {
-        background-color: #2c2c2c !important; 
-        background-image: none !important;   
-        height: 100vh;                       
+        background-image: url('homeShort.png') !important;   
     }
+    #asociacion {
+        margin-bottom: 5%;
+        align-items: center;
+        display: contents; /* Mueve el texto al fondo de la página */
+    }    
+    .presentation h1, .presentation p {
+        display: none;
+    }                 
 }
 
 
@@ -256,48 +296,53 @@
         <div class="presentation">
             <h1>SABRINA RAMOS</h1>
             <p>ABOGADA</p>
-            <p class="same-font">ASOCIACIÓN CON LEON CHAIA</p>
+            <p id="asociacion"class="same-font">Asociación con Chaia | Arazia Estudio De Abogados</p>
         </div>
     </div>
 
     <!-- Servicios Section -->
-    <div id="services" class="section bg-dark text-white">
-        <h2 class="text-center mb-4 same-font">Servicios</h2>
-        <div class="d-flex justify-content-between flex-wrap">
-            <div class="service-box flex-fill text-center p-4 mx-2 border border-dark bg-white text-dark d-flex flex-column justify-content-center">
-                <h3 class="same-font">PENAL</h3>
-                <ul class="list-unstyled">
-                    <li>Defensa en procesos penales.</li>
-                    <li>Asesoramiento en litigios penales.</li>
-                    <li>Representación ante tribunales.</li>
-                </ul>
-            </div>
-            <div class="service-box flex-fill text-center p-4 mx-2 border border-dark bg-white text-dark d-flex flex-column justify-content-center">
-                <h3 class="same-font">CIVIL</h3>
-                <ul class="list-unstyled">
-                    <li>Resolución de conflictos contractuales.</li>
-                    <li>Defensa de bienes y propiedades.</li>
-                    <li>Asesoramiento en derechos de propiedad.</li>
-                </ul>
-            </div>
-            <div class="service-box flex-fill text-center p-4 mx-2 border border-dark bg-white text-dark d-flex flex-column justify-content-center">
-                <h3 class="same-font">FAMILIA</h3>
-                <ul class="list-unstyled">
-                    <li>Asesoramiento en divorcios.</li>
-                    <li>Asesoría en adopciones.</li>
-                    <li>Consultoría en herencias.</li>
-                </ul>
+    <div id="services">
+        <div class="services-container text-white border border-dark p-4"> 
+            <h2 class="text-center mb-4 same-font">Servicios</h2>
+            <div class="d-flex flex-wrap justify-content-between">
+                <div class="service-box text-center p-4 flex-fill">
+                    <h3 class="same-font">D.PENAL</h3>
+                    <ul class="list-unstyled">
+                        <li>Contra la integridad sexual</li>
+                        <li>Contra las personas</li>
+                        <li>Estupefacientes</li>
+                        <li>Contra la propiedad</li>
+                        <li>Delito penal economico</li>
+                        <li>Contra la administracion publica</li>
+                    </ul>
+                </div>
+                <div class="service-box text-center p-4 flex-fill">
+                    <h3 class="same-font">D.CIVIL</h3>
+                    <ul class="list-unstyled">
+                        <li>Mala praxis</li>
+                        <li>Accidentes de transito</li>
+                        <li>Entre otros</li>
+                    </ul>
+                </div>
+                <div class="service-box text-center p-4 flex-fill">
+                    <h3 class="same-font">D.FAMILIA</h3>
+                    <ul class="list-unstyled">
+                        <li>divorcio</li>
+                        <li>sucesiones</li>
+                        <li>Violencia domestica</li>
+                        <li>Acuerdos prenupciales</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- About Section -->
     <div id="about" class="about">
         <div class="section about-content">
             <div class="about-text">
-                <h2 class="same-font">Sobre Sabrina Ramos</h2>
-                <p>Con más de 10 años de experiencia en el ámbito legal, Sabrina se especializa en derecho penal, civil y de familia. Su compromiso con la justicia y el bienestar de sus clientes la ha llevado a proporcionar un servicio altamente personalizado y profesional, con el objetivo de ofrecer soluciones efectivas en cada caso.</p>
-                <p>En su trayectoria, Sabrina ha trabajado en diversos casos complejos, siempre buscando el mejor resultado para sus clientes. Su visión es seguir brindando un servicio legal de calidad, enfocado en la satisfacción y éxito de quienes confían en ella.</p>
+                <h2 class="same-font">Quien soy?...</h2>
+                <p>Mas que abogada soy aliada en tus busquedas de justicia y tranquilidad.Busco ayudarte a encontrar soluciones legales efectivas. Mi formacion e Universidad de Buenos Aires y mi pasion por la justicia me han llevado a especializarme en derecho penal, familia civil y violencia de genero </p>
+                <p>Cada caso es unico y lo transito con confidencialidad, respeto y dedicacion que merece. mi objetivo es que mis clientes se sientan respaldados en todo momento bridando soluciones claras y efectivas.</p>
             </div>
             <div class="about-image">
                 <img src="contact-image.jpg" alt="Imagen de Sabrina Ramos">
@@ -325,11 +370,13 @@
         </form>
     </div>
 
+
     <!-- Footer -->
     <footer>
         <p>Contacto:</p>
-        <p>Email: <a href="mailto:sabrina.95.ramos@gmail.com">sabrina.95.ramos@gmail.com</a></p>
+        <p>Email: <a href="mailto:sabrina.abogada.ramos@outlook.com">sabrina.abogada.ramos@outlook.com</a></p>
         <p>Teléfono: +123 456 7890</p>
+        <p>Dirección: Cerrito 228- 8°B, CABA, Argentina</p>
         <p>
             <a href="https://www.instagram.com/" target="_blank">Instagram</a> |
             <a href="https://wa.me/11234567890" target="_blank">WhatsApp</a> |
