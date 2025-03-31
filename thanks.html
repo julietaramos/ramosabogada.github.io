@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+<style>
+
+        .contact {
+            background: url('secondPage.jpg') no-repeat center center;
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .thanks {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            width: 80%;
+            max-width: 500px;
+        }
+        .thanks input, .form-container textarea {
+            background-color: #333;
+            color: white;
+            border: 1px solid #444;
+            border-radius: 5px;
+            padding: 15px;
+            width: 100%;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        .thanks button {
+            background-color: #C2A878;
+            color: white;
+            font-size: 18px;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .thanks button:hover {
+            background-color: #B39D61; 
+        }
+
+
+</style>
+
+</head>
+<body>
+
+   <div id="contact" class="contact">
+
+    <div class="thanks"> 
+
+    <h2> Gracias por su consulta</h2>
+    <p> Muy pronto sera contactado</p>
+
+    <a href="index.html"><button type="submit" class="btn btn-primary">Volver</button>
+    </a>
+    </div>
+
+</div>
+
+<script>
+    setTimeout(function(){
+        window.location.replace('index.html');
+    }, 5000);
+
+</script>
+
+
+</body>
+</html>
