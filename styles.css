@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Playfair Display', serif;
+    background-color: black;
+    color: white;
+}
+.presentation {
+    margin-right: 20%;
+}
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: relative;
+    text-align: center;
+    color: #C2A878; 
+}
+.container h1 {
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #C2A878; 
+}
+.container p {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #C2A878; 
+}
+.presentation h1, .presentation p {
+    color: #C2A878; 
+}
+.about {
+    width: 100%;
+    background-color: #2c2c2c; 
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    text-align: left;
+}
+.about-text {
+    width: 100%;
+    padding-right: 30px;
+}
+.about-text h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #C2A878;
+    margin-bottom: 30px;
+}
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #d3d3d3;
+}
+.about-image {
+    width: 35%;
+}
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-text {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    .about-image {
+        width: 100%;
+    }
+    .service-box {
+        margin-bottom: 20px;
+    }
+}
+#services {
+background: url('images/facultadDeDerecho.jpg') no-repeat center center / cover;
+background-attachment: fixed;
+min-height: 70vh;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 20px;
+}
+
+.services-container {
+background-color: rgba(0, 0, 0, 0.75); 
+padding: 30px;
+width: 80%;
+border-radius: 10px;
+}
+
+.service-container ul{
+        list-style-position: inside; 
+        padding-left: 0; 
+        margin-left: 0; 
+        text-align: left; 
+}
+
+.services-container h2 {
+margin-bottom: 20px;
+color: #C2A878;
+font-weight: bold;
+
+}
+
+.service-box {
+flex: 1;
+min-width: 250px;
+}
+
+@media (max-width: 768px) {
+.d-flex {
+flex-direction: column;
+align-items: center;
+}
+
+.services-container {
+width: 90%; 
+}
+}
+
+nav {
+    background-color: #212121; 
+    padding: 10px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.navbar-brand {
+    color: #C2A878 !important; 
+}
+nav a {
+    color: #C2A878 !important; 
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+nav a:hover {
+    background-color: #C2A878; 
+    color: #212121 !important; 
+    border-radius: 5px;
+}
+.navbar-toggler {
+    border: none;
+}
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .nav-item {
+        margin: 10px 0;
+    }
+}
+
+.contact {
+    background: url('images/secondPage.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+
+
+.form-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 500px;
+}
+.form-container input, .form-container textarea {
+    background-color: #333;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.form-container button {
+    background-color: #C2A878;
+    color: white;
+    font-size: 18px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.form-container button:hover {
+    background-color: #B39D61; 
+}
+
+footer {
+    background-color: #212121;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+footer a {
+    color: #C2A878;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+footer a:hover {
+    color: #B39D61;
+}
+.container {
+background-image: url('images/sabrinaRamos.png');
+background-repeat: no-repeat;
+background-position: center center;
+background-size: cover;
+height: 100vh;
+}
+
+@media (max-width: 768px) {
+.container {
+background-image: url('images/homeShort.png') !important;   
+}
+#asociacion {
+margin-bottom: 5%;
+align-items: center;
+display: contents; 
+}    
+.presentation h1, .presentation p {
+display: none;
+}                 
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 0.6s ease-out;
+}
+.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.hidden-right {
+opacity: 0;
+transform: translateX(100px); 
+transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+#about {
+position: relative;
+height: 100vh;
+}
+
+
+.thanks {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 500px;
+}
+.thanks input, .form-container textarea {
+    background-color: #333;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.thanks button {
+    background-color: #C2A878;
+    color: white;
+    font-size: 18px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.thanks button:hover {
+    background-color: #B39D61; 
+}

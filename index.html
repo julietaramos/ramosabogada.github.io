@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabrina Ramos - Abogada</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Sabrina Ramos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre Mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="home" class="container">
+        <div class="presentation">
+            <h1>SABRINA RAMOS</h1>
+            <p>ABOGADA</p>
+        </div>
+    </div>
+    <div id="services">
+        <div class="services-container text-white border border-dark p-4 hidden" id="servicesInfo">
+            <h2 class="text-center mb-4 same-font">Servicios</h2>
+            <div class="d-flex flex-wrap justify-content-between">
+                <div class="service-box text-center p-4 flex-fill">
+                    <h3 class="same-font">D. PENAL</h3>
+                    <ul class="list-unstyled">
+                        <li>Contra la integridad sexual</li>
+                        <li>Contra las personas</li>
+                        <li>Estupefacientes</li>
+                        <li>Contra la propiedad</li>
+                        <li>Delito penal económico</li>
+                        <li>Contra la administración pública</li>
+                    </ul>
+                </div>
+                <div class="service-box text-center p-4 flex-fill">
+                    <h3 class="same-font">D. CIVIL</h3>
+                    <ul class="list-unstyled">
+                        <li>Mala praxis</li>
+                        <li>Accidentes de tránsito</li>
+                        <li>Entre otros</li>
+                    </ul>
+                </div>
+                <div class="service-box text-center p-4 flex-fill">
+                    <h3 class="same-font">D. FAMILIA</h3>
+                    <ul class="list-unstyled">
+                        <li>Divorcio</li>
+                        <li>Sucesiones</li>
+                        <li>Violencia doméstica</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="about">
+        <div class="section about-content" id="aboutInfo">
+            <div class="about-text">
+                <h2 class="same-font">¿Quién soy?...</h2>
+                <p>Más que abogada, soy aliada en tus búsquedas de justicia y tranquilidad. Busco ayudarte a encontrar soluciones legales efectivas. Mi formación en la Universidad de Buenos Aires y mi pasión por la justicia me han llevado a especializarme en derecho penal, familia civil y violencia de género.</p>
+                <p>Cada caso es único y lo transito con confidencialidad, respeto y dedicación que merece. Mi objetivo es que mis clientes se sientan respaldados en todo momento, brindando soluciones claras y efectivas.</p>
+            </div>
+            <div class="about-image">
+                <img src="images/quienSoy.jpg" alt="Imagen de Sabrina Ramos">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="contact" class="contact" >
+        <form action="send-email.php" method="post" class="form-container hidden" id="constactInfo">
+            <h2>Contacto</h2>
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Escribe tu nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Escribe tu correo electrónico" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="message" name="message" rows="3" placeholder="Escribe tu mensaje" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+
+    <footer>
+        <p>Contacto:</p>
+        <p>Email: <a href="mailto:sabrina.abogada.ramos@outlook.es">sabrina.abogada.ramos@outlook.es</a></p>
+        <p>Teléfono: +54 11-5177-3577</p>
+        <p>
+            <a href="https://www.instagram.com/sabrinaramos_abogada/" target="_blank">Instagram</a> |
+            <a href="https://wa.me/5491151773577" target="_blank">WhatsApp</a> |
+            <a href="https://www.linkedin.com/in/sabrina-ramos-999676172/" target="_blank">LinkedIn</a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="effects.js"></script>
+</body>
+</html>
