@@ -1,0 +1,11 @@
+package com.ramosabogada;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class RamosAbogadaApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(RamosAbogadaApplication.class, args);
+    }
+}
