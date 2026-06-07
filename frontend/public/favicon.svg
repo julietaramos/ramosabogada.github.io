@@ -1,11 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 148">
-  <!-- Shield background -->
-  <path d="M 6 6 H 114 V 74 Q 114 116 60 140 Q 6 116 6 74 Z" fill="#52525E"/>
-  <path d="M 6 6 H 114 V 74 Q 114 116 60 140 Q 6 116 6 74 Z" stroke="#C8A882" stroke-width="2" fill="none"/>
-  <!-- Normal R (left) -->
-  <text x="16" y="90" font-family="Georgia, serif" font-size="64" font-weight="bold" fill="#C8A882">R</text>
-  <!-- Mirrored R (right) -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- Shield -->
+  <path d="M10 8H110V68Q110 106 60 118Q10 106 10 68Z" fill="#3C3C48"/>
+  <path d="M10 8H110V68Q110 106 60 118Q10 106 10 68Z" stroke="#C8A882" stroke-width="3" fill="none"/>
+  <!-- Inner border -->
+  <path d="M18 15H102V66Q102 100 60 110Q18 100 18 66Z" stroke="#C8A882" stroke-width="1" stroke-opacity="0.4" fill="none"/>
+  <!-- R normal -->
+  <text x="12" y="84" font-family="Georgia,serif" font-size="64" font-weight="bold" fill="#C8A882">R</text>
+  <!-- R mirrored -->
   <g transform="translate(120,0) scale(-1,1)">
-    <text x="16" y="90" font-family="Georgia, serif" font-size="64" font-weight="bold" fill="#C8A882">R</text>
+    <text x="12" y="84" font-family="Georgia,serif" font-size="64" font-weight="bold" fill="#C8A882">R</text>
   </g>
 </svg>
