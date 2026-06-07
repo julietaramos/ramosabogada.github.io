@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 148">
+  <!-- Shield background -->
+  <path d="M 6 6 H 114 V 74 Q 114 116 60 140 Q 6 116 6 74 Z" fill="#52525E"/>
+  <path d="M 6 6 H 114 V 74 Q 114 116 60 140 Q 6 116 6 74 Z" stroke="#C8A882" stroke-width="2" fill="none"/>
+  <!-- Normal R (left) -->
+  <text x="16" y="90" font-family="Georgia, serif" font-size="64" font-weight="bold" fill="#C8A882">R</text>
+  <!-- Mirrored R (right) -->
+  <g transform="translate(120,0) scale(-1,1)">
+    <text x="16" y="90" font-family="Georgia, serif" font-size="64" font-weight="bold" fill="#C8A882">R</text>
+  </g>
+</svg>
