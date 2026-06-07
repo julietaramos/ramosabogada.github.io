@@ -29,7 +29,12 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="contact" aria-label="Contacto">
+    <section
+      id="contact"
+      className="contact"
+      aria-label="Contacto"
+      style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/secondPage.jpg)` }}
+    >
       <div
         ref={ref as React.RefObject<HTMLDivElement>}
         className={`contact__card ${isVisible ? 'contact__card--visible' : ''}`}

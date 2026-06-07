@@ -1,5 +1,7 @@
 .contact {
-  background: url('/images/secondPage.jpg') no-repeat center center / cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   align-items: center;

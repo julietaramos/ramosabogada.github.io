@@ -27,7 +27,7 @@ export default function About() {
         </div>
         <div className="about__image-wrapper">
           <img
-            src="/images/quienesSomos.png"
+            src={`${import.meta.env.BASE_URL}images/quienesSomos.png`}
             alt="Dra. Sabrina Ramos y Dra. Oriana Rojo"
             className="about__image"
             loading="lazy"
