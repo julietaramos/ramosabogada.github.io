@@ -1,7 +1,7 @@
 import './Footer.css'
 
 const CONTACT_INFO = {
-  email: 'sabrina.abogada.ramos@outlook.es',
+  email: 'sramoslegal95@gmail.com',
   phone: '+54 11-5177-3577',
   whatsapp: 'https://wa.me/5491151773577',
   instagram: 'https://www.instagram.com/sabrinaramos_abogada/',

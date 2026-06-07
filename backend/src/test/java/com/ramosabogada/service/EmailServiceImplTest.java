@@ -23,7 +23,7 @@ class EmailServiceImplTest {
     @InjectMocks
     private EmailServiceImpl emailService;
 
-    private static final String RECIPIENT = "sabrina.abogada.ramos@outlook.es";
+    private static final String RECIPIENT = "sramoslegal95@gmail.com";
     private static final String SENDER = "noreply@ramosabogada.com";
 
     void setUp() {

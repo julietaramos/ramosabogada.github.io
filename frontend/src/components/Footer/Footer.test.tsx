@@ -10,7 +10,7 @@ describe('Footer', () => {
 
   it('renders email link', () => {
     render(<Footer />)
-    const emailLink = screen.getByRole('link', { name: /sabrina\.abogada\.ramos/i })
+    const emailLink = screen.getByRole('link', { name: /sramoslegal95/i })
     expect(emailLink).toHaveAttribute('href', expect.stringContaining('mailto:'))
   })
 
