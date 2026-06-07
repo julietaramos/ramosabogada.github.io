@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: '/ramosabogada.github.io/',
+  base: '/rrestudiojuridico/',
   plugins: [react()],
   test: {
     globals: true,
