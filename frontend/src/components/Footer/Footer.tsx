@@ -13,9 +13,8 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer__container">
         <div className="footer__brand">
-          <span className="footer__name">Ramos, Rojo y Asociados</span>
-          <span className="footer__role">Estudio Jurídico</span>
-          <span className="footer__lawyers">Dra. Sabrina Ramos · Dra. Oriana Rojo</span>
+          <span className="footer__name">Sabrina Ramos</span>
+          <span className="footer__role">Abogada</span>
         </div>
 
         <div className="footer__contact">
@@ -44,7 +43,7 @@ export default function Footer() {
 
       <div className="footer__bottom">
         <p className="footer__copy">
-          &copy; {new Date().getFullYear()} Ramos, Rojo y Asociados — Todos los derechos reservados
+          &copy; {new Date().getFullYear()} Sabrina Ramos — Todos los derechos reservados
         </p>
       </div>
     </footer>
