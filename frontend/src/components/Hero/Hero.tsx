@@ -1,65 +1,57 @@
 import './Hero.css'
 
-function ShieldEmblem() {
+function CircleEmblem() {
   return (
     <div className="hero__emblem">
       <svg
         className="hero__shield-svg"
-        viewBox="0 0 120 148"
+        viewBox="0 0 120 120"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"
       >
-        {/* Outer shield */}
-        <path
-          d="M 6 6 H 114 V 74 Q 114 116 60 140 Q 6 116 6 74 Z"
-          stroke="rgba(200,168,130,0.45)"
-          strokeWidth="1.5"
-          fill="rgba(200,168,130,0.03)"
-        />
-        {/* Inner shield border */}
-        <path
-          d="M 14 13 H 106 V 72 Q 106 110 60 132 Q 14 110 14 72 Z"
-          stroke="rgba(200,168,130,0.25)"
-          strokeWidth="1"
-          fill="none"
-        />
-        {/* Top ornamental line */}
-        <line x1="22" y1="30" x2="98" y2="30" stroke="rgba(200,168,130,0.2)" strokeWidth="0.5" />
-        {/* Bottom ornamental line */}
-        <line x1="28" y1="97" x2="92" y2="97" stroke="rgba(200,168,130,0.2)" strokeWidth="0.5" />
+        {/* Outer circle */}
+        <circle cx="60" cy="60" r="56" stroke="rgba(200,168,130,0.45)" strokeWidth="1.5" />
+        {/* Inner circle */}
+        <circle cx="60" cy="60" r="50" stroke="rgba(200,168,130,0.2)" strokeWidth="0.8" />
 
-        {/* Normal R (left) */}
+        {/* Scales — pole */}
+        <line x1="60" y1="18" x2="60" y2="72" stroke="rgba(200,168,130,0.75)" strokeWidth="1.5" />
+        {/* Beam */}
+        <line x1="32" y1="32" x2="88" y2="32" stroke="rgba(200,168,130,0.75)" strokeWidth="1.5" />
+        {/* Left chains */}
+        <line x1="32" y1="32" x2="26" y2="50" stroke="rgba(200,168,130,0.6)" strokeWidth="1" />
+        <line x1="32" y1="32" x2="38" y2="50" stroke="rgba(200,168,130,0.6)" strokeWidth="1" />
+        {/* Left pan */}
+        <path d="M23 50 Q32 58 41 50" stroke="rgba(200,168,130,0.75)" strokeWidth="1.5" />
+        {/* Right chains */}
+        <line x1="88" y1="32" x2="82" y2="50" stroke="rgba(200,168,130,0.6)" strokeWidth="1" />
+        <line x1="88" y1="32" x2="94" y2="50" stroke="rgba(200,168,130,0.6)" strokeWidth="1" />
+        {/* Right pan */}
+        <path d="M79 50 Q88 58 97 50" stroke="rgba(200,168,130,0.75)" strokeWidth="1.5" />
+        {/* Base */}
+        <line x1="50" y1="72" x2="70" y2="72" stroke="rgba(200,168,130,0.75)" strokeWidth="1.5" />
+
+        {/* Divider */}
+        <line x1="36" y1="79" x2="84" y2="79" stroke="rgba(200,168,130,0.3)" strokeWidth="0.8" />
+
+        {/* SR */}
         <text
-          x="16"
-          y="90"
+          x="60"
+          y="102"
+          textAnchor="middle"
           fontFamily="Georgia, serif"
-          fontSize="64"
-          fontWeight="bold"
+          fontSize="20"
           fill="rgba(200,168,130,0.75)"
-          letterSpacing="-2"
+          fontWeight="bold"
+          letterSpacing="6"
         >
-          R
+          SR
         </text>
-
-        {/* Mirrored R (right) — reflected around x=60 */}
-        <g transform="translate(120,0) scale(-1,1)">
-          <text
-            x="16"
-            y="90"
-            fontFamily="Georgia, serif"
-            fontSize="64"
-            fontWeight="bold"
-            fill="rgba(200,168,130,0.75)"
-            letterSpacing="-2"
-          >
-            R
-          </text>
-        </g>
       </svg>
 
-      <p className="hero__emblem-name">RAMOS, ROJO Y ASOCIADOS</p>
-      <p className="hero__emblem-tagline">Estudio Jurídico</p>
+      <p className="hero__emblem-name">SABRINA RAMOS</p>
+      <p className="hero__emblem-tagline">Abogada</p>
     </div>
   )
 }
@@ -71,17 +63,17 @@ export default function Hero() {
       <div className="hero__decoration" aria-hidden="true">
         <div className="hero__circle hero__circle--outer" />
         <div className="hero__circle hero__circle--middle" />
-        <ShieldEmblem />
+        <CircleEmblem />
       </div>
 
       {/* Main content */}
       <div className="hero__content">
         <h1 className="hero__title">
-          <span className="hero__title-line">RAMOS, ROJO</span>
-          <span className="hero__title-line hero__title-line--sub">Y ASOCIADOS</span>
+          <span className="hero__title-line">SABRINA</span>
+          <span className="hero__title-line hero__title-line--sub">RAMOS</span>
         </h1>
         <div className="hero__divider" aria-hidden="true" />
-        <p className="hero__subtitle">Asesoría legal integral y confidencial</p>
+        <p className="hero__subtitle">Asesoría Legal Integral</p>
         <a href="#contact" className="hero__cta">Consultar ahora</a>
       </div>
 
