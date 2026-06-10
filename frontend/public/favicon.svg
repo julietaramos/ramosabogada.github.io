@@ -1,13 +1,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
-  <!-- Shield -->
-  <path d="M10 8H110V68Q110 106 60 118Q10 106 10 68Z" fill="#3C3C48"/>
-  <path d="M10 8H110V68Q110 106 60 118Q10 106 10 68Z" stroke="#C8A882" stroke-width="3" fill="none"/>
-  <!-- Inner border -->
-  <path d="M18 15H102V66Q102 100 60 110Q18 100 18 66Z" stroke="#C8A882" stroke-width="1" stroke-opacity="0.4" fill="none"/>
-  <!-- R normal -->
-  <text x="12" y="84" font-family="Georgia,serif" font-size="64" font-weight="bold" fill="#C8A882">R</text>
-  <!-- R mirrored -->
-  <g transform="translate(120,0) scale(-1,1)">
-    <text x="12" y="84" font-family="Georgia,serif" font-size="64" font-weight="bold" fill="#C8A882">R</text>
-  </g>
+  <!-- Background -->
+  <circle cx="60" cy="60" r="60" fill="#1a1a1a"/>
+  <!-- Outer circle -->
+  <circle cx="60" cy="60" r="54" fill="none" stroke="#C8A882" stroke-width="2.5"/>
+  <!-- Inner circle -->
+  <circle cx="60" cy="60" r="48" fill="none" stroke="#C8A882" stroke-width="0.8" stroke-opacity="0.35"/>
+  <!-- Scales: pole -->
+  <line x1="60" y1="18" x2="60" y2="74" stroke="#C8A882" stroke-width="2.2"/>
+  <!-- Beam -->
+  <line x1="28" y1="34" x2="92" y2="34" stroke="#C8A882" stroke-width="2.2"/>
+  <!-- Left chains -->
+  <line x1="28" y1="34" x2="20" y2="56" stroke="#C8A882" stroke-width="1.4"/>
+  <line x1="28" y1="34" x2="36" y2="56" stroke="#C8A882" stroke-width="1.4"/>
+  <!-- Left pan -->
+  <path d="M17 56 Q28 66 39 56" fill="none" stroke="#C8A882" stroke-width="2.2"/>
+  <!-- Right chains -->
+  <line x1="92" y1="34" x2="84" y2="56" stroke="#C8A882" stroke-width="1.4"/>
+  <line x1="92" y1="34" x2="100" y2="56" stroke="#C8A882" stroke-width="1.4"/>
+  <!-- Right pan -->
+  <path d="M81 56 Q92 66 103 56" fill="none" stroke="#C8A882" stroke-width="2.2"/>
+  <!-- Base -->
+  <line x1="48" y1="74" x2="72" y2="74" stroke="#C8A882" stroke-width="2.2"/>
+  <!-- Divider -->
+  <line x1="36" y1="82" x2="84" y2="82" stroke="#C8A882" stroke-width="1" stroke-opacity="0.45"/>
+  <!-- SR -->
+  <text x="60" y="108" text-anchor="middle" font-family="Georgia,serif" font-size="22" fill="#C8A882" font-weight="bold" letter-spacing="6">SR</text>
 </svg>
